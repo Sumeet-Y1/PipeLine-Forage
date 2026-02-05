@@ -195,8 +195,8 @@ MIT License
 ## 👤 Author
 
 Your Name
-- GitHub: [@YOUR_USERNAME](https://github.com/Sumeet-Y1)
-- LinkedIn: [Your Profile](https://www.linkedin.com/in/sumeet-backenddev/)
+- GitHub: [@Sumeet-Y1](https://github.com/Sumeet-Y1)
+- LinkedIn: [Sumeet Y](https://www.linkedin.com/in/sumeet-backenddev/)
 
 ---
 
