@@ -1,0 +1,40 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+*.log
+
+# Spring Boot
+application-local.properties
+application-dev.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+
+# Docker
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AWS
+.aws/
+
+# Sensitive
+secrets/
+*.pem
+*.key
