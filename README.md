@@ -202,21 +202,3 @@ Your Name
 
 ⭐ Star this repo if you find it helpful!
 ```
-
----
-
-## **Topics/Tags for GitHub:**
-```
-aws
-terraform
-spring-boot
-docker
-microservices
-devops
-ci-cd
-github-actions
-ecs
-infrastructure-as-code
-cloudwatch
-sqs
-cloud-native
