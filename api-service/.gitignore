@@ -8,6 +8,7 @@ target/
 
 # Spring Boot
 application-local.properties
+application-local.yml          # ← ADD THIS LINE
 application-dev.properties
 
 # IDE

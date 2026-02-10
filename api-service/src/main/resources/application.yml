@@ -3,7 +3,7 @@ spring:
     name: api-service
 
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:pipelineforge}
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:pipelineforge}?createDatabaseIfNotExist=true
     username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD:password}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -15,7 +15,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
 
 server:
   port: 8080
@@ -25,3 +25,9 @@ aws:
   region: ${AWS_REGION:us-east-1}
   sqs:
     queue-url: ${SQS_QUEUE_URL:}
+
+# Logging
+logging:
+  level:
+    com.pipelineforge: DEBUG
+    org.springframework.web: INFO
