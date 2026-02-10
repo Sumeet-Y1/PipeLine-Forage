@@ -6,10 +6,13 @@
 target/
 *.log
 
-# Spring Boot
-application-local.properties
+# Spring Boot - IMPORTANT!
 application-local.yml
+application-local.properties
+application-dev.yml
 application-dev.properties
+**/application-local.yml
+**/application-local.properties
 
 # IDE
 .idea/
