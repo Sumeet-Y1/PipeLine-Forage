@@ -1,8 +1,8 @@
 package com.pipelineforge.api_service.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import software.amazon.awssdk.services.sqs.SqsClient;
@@ -13,15 +13,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-@Slf4j
-@RequiredArgsConstructor
 public class SqsService {
+
+    private static final Logger log = LoggerFactory.getLogger(SqsService.class);
 
     private final SqsClient sqsClient;
     private final ObjectMapper objectMapper;
 
     @Value("${aws.sqs.queue-url}")
     private String queueUrl;
+
+    public SqsService(SqsClient sqsClient, ObjectMapper objectMapper) {
+        this.sqsClient = sqsClient;
+        this.objectMapper = objectMapper;
+    }
 
     public void sendTaskToQueue(String taskId, String type, String payload) {
         try {
